@@ -67,8 +67,8 @@ variable "tags" {
   type        = map(string)
 }
 
-variable "vpc_data_subnets" {
-  default     = true
-  description = "Set to `false` to prevent the module from creating any resources"
+variable "enabled_data_subnets" {
   type        = bool
+  description = "Set to `false` to prevent the module from creating data subnets"
+  default     = true
 }
