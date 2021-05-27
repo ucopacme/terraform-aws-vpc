@@ -72,3 +72,9 @@ variable "enabled_data_subnets" {
   description = "Set to `false` to prevent the module from creating data subnets"
   default     = true
 }
+
+variable "enabled_public_subnets" {
+  type        = bool
+  description = "Set to `false` to prevent the module from creating data subnets"
+  default     = true
+}
